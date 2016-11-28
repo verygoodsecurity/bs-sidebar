@@ -1,11 +1,11 @@
-# Vg-sidebar
+# bs-sidebar
 
 This README outlines the details of collaborating on this Ember addon.
 
 ## Installation
 
 * `git clone <repository-url>` this repository
-* `cd vg-sidebar`
+* `cd bs-sidebar`
 * `npm install`
 * `bower install`
 

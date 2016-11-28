@@ -2,5 +2,5 @@
 'use strict';
 
 module.exports = {
-  name: 'vg-sidebar'
+  name: 'bs-sidebar'
 };

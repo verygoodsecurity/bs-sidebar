@@ -1,0 +1,25 @@
+{{#if item.isHeader}}
+  {{item.label}}
+{{else if item.isLink}}
+  {{#link-to params=item.params class="nav-link"}}
+    {{#if item.children}}
+      <span class="nav-caret">
+        <i class="fa fa-caret-down" />
+      </span>
+    {{/if}}
+    {{#if item.icon}}
+      <span class="nav-icon">
+        <i class={{item.icon.classNames}} />
+      </span>
+    {{/if}}
+    {{#if item.badge}}
+      <span class="nav-label">
+        <b class={{item.badge.classNames}}>{{item.badge.label}}</b>
+      </span>
+    {{/if}}
+    <span class="nav-text">{{item.label}}</span>
+  {{/link-to}}
+  {{#if item.children}}
+    {{bs-sidebar item.children isChildren=true isStacked=isStacked isPills=isPills}}
+  {{/if}}
+{{/if}}
