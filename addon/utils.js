@@ -8,6 +8,10 @@ export function link(label, routeName, options) {
   return assign({ label, params: [ routeName ], isLink: true }, options);
 }
 
+export function linkTo(label, params, options) {
+  return assign({ label, params, isLink: true }, options);
+}
+
 export function badge(label, classNames) {
   return {
     label,
